@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="x-icon" href="./img/XLICON.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
   <style>
     body {
       display: flex;
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-image: url("https://i.ibb.co/nngqLkV/932151.jpg"); /* Set the background image */
+      background-image: url("https://i.ibb.co/nngqLkV/932151.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -21,7 +22,7 @@
     .btn {
       --color: hsl(0, 0%, 100%);
       --color2: rgb(0, 0, 0);
-      width: 200px; /* Set a fixed width for the buttons */
+      width: 200px;
       padding: 0.8em 1.75em;
       background-color: transparent;
       border-radius: 6px;
@@ -36,7 +37,7 @@
       font-family: 'Roboto', 'Segoe UI', sans-serif;
       text-transform: uppercase;
       color: var(--color);
-      margin-bottom: 10px; /* Add margin to separate buttons */
+      margin-bottom: 10px;
     }
 
     .btn::after, .btn::before {
@@ -75,15 +76,21 @@
       filter: brightness(.7);
       transform: scale(.98);
     }
+
+    .btn:focus { /* Added focus style */
+      outline: 2px solid orange; /* Or any other visible outline */
+      outline-offset: 2px;
+    }
   </style>
 </head>
 <body>
 
-  <button onclick="window.open(`/pair`)" class="btn">pair code</button>
-  <button onclick="window.open(`https://github.com/salmanytofficial`)" class="btn">github</button>
-  <button onclick="window.open(`https://youtube.com/@s4salmanyt`)" class="btn">youtube</button>
-  <button onclick="window.open(`https://t.me/ahmmitech`)" class="btn">telegram</button>
-  <button onclick="window.open(`https://www.instagram.com/ahmmikun`)" class="btn">instagram</button>
+  <button onclick="window.open('/pair', '_blank', 'noopener,noreferrer')" class="btn">pair code</button>
+  <button onclick="window.open('https://github.com/salmanytofficial', '_blank', 'noopener,noreferrer')" class="btn">github</button>
+  <button onclick="window.open('https://youtube.com/@s4salmanyt', '_blank', 'noopener,noreferrer')" class="btn">youtube</button>
+  <button onclick="window.open('https://t.me/ahmmitech', '_blank', 'noopener,noreferrer')" class="btn">telegram</button>
+  <button onclick="window.open('https://www.instagram.com/ahmmikun', '_blank', 'noopener,noreferrer')" class="btn">instagram</button>
+
   <style>
     /* Add media queries for responsive website */
     @media screen and (max-width: 600px) {
